@@ -68,7 +68,7 @@ else:
                          gen = "Stone Age"
                   
 if month == "October" and int(day) == 31:
-    print("You were born on Halloween!")
+    print( "You were born on Halloween!")
 else:
     if g==todaymonth and int(day) == todaydate:
         print("Happy birthday!")
