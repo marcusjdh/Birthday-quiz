@@ -31,6 +31,7 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
@@ -61,7 +62,10 @@ else:
              gen = "Nineties"
         else:
                   if int(year) >= 2000:
-                    gen = "stone age"
+                    gen = "Two thousands"
+                  else:
+                      if int(year) <= 1980:
+                         gen = "Stone Age"
                   
 if month == "October" and int(day) == 31:
     print("You were born on Halloween!")
