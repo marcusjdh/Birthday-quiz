@@ -56,13 +56,13 @@ monthname=["","January", "February", "March", "April", "May", "June", "July", "A
 g=monthname.index("September")
 
 if year in ["1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989"]:
-    gen = "Eighties"
+    gen = "eighties"
 else: 
         if year in ["1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999"]:
-             gen = "Nineties"
+             gen = "nineties"
         else:
                   if int(year) >= 2000:
-                    gen = "Two thousands"
+                    gen = "two thousands"
                   else:
                       if int(year) <= 1980:
                          gen = "Stone Age"
@@ -73,7 +73,7 @@ else:
     if g==todaymonth and int(day) == todaydate:
         print("Happy birthday!")
     else:
-         print(user + ",  you are a " + season + " baby of the " + gen)
+         print(user + ",  you are a " + season + " baby of the " + gen + ".")
 
 
 
